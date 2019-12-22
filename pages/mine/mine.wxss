@@ -1,0 +1,84 @@
+page{
+    background-color: #eee;
+}
+
+
+.avator{
+    background-color: #fff;
+    height: 320rpx;
+    box-sizing: border-box;
+    padding-bottom: 20rpx;
+    display:flex;
+    flex-direction: column;   
+    align-items: center; 
+}
+
+.avator>.topBox{
+  width:100%;
+  box-sizing:border-box;
+  display:flex;
+  padding-left:20rpx;
+  padding-right:20rpx;
+  padding-bottom:20rpx;
+}
+
+.avator>.topBox>.topLeft{
+  display:flex;
+  margin-left:30rpx;
+}
+
+.avator>.topBox>.topRight{
+  display:flex;
+  margin-left:560rpx;
+}
+
+.avator>image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+.avator>text{
+    font-size: 35rpx;
+    color:#333333;
+}
+
+
+.main{
+    margin:30rpx 0;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#333333;
+    font-size:28rpx;
+    padding:0 50rpx;
+    background-color: #fff;
+}
+.main>.date{
+    color:#A2A2A2;
+    font-size:24rpx;
+}
+
+
+.content{
+    height: 800rpx;
+    padding: 52rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size:28rpx;
+    color:#333333;
+    background-color: #fff;
+}
+.content>.cell{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.content>.cell>image{
+    width:14rpx;
+    height:25rpx;
+}
+
+
+

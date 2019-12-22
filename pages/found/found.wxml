@@ -1,0 +1,108 @@
+<van-tabs type="line" duration="0.2" animated="true" color="pink">
+  <van-tab title="关注" dots></van-tab>
+  <van-tab title="推荐"></van-tab>
+  <van-tab title="杭州"></van-tab>
+</van-tabs>
+
+
+<view class="search">
+  <van-search
+    value="{{ value }}"
+    placeholder="大家都在搜钢琴课"
+    use-action-slot
+    bind:search="onSearch"
+    shape="round"
+  >
+    <view slot="action" bind:tap="onSearch"></view>
+  </van-search>
+</view>
+
+
+<view class="tab">
+  <view class="tabSubLeft">
+    <van-tabs type="card" duration="0.2" animated="true" color="pink">
+      <van-tab title="关注"></van-tab>
+      <van-tab title="推荐"></van-tab>
+      <van-tab title="杭州"></van-tab>
+    </van-tabs>
+  </view>
+
+  <view class="tabSubRight">
+    <van-tabs type="card" duration="0.2" animated="true" color="pink">
+      <van-tab title="视频"></van-tab>
+      <van-tab title="筛选"></van-tab>
+    </van-tabs>
+  </view>
+</view>
+
+
+<view class="introVideo">
+    <view class="hotImg">
+      <view class="singleBox">
+          <image src="../../images/server-01.jpg"></image> 
+          <text class="title">宫崎骏的动画与音乐，真的可以治愈人心</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon1 }}" />
+          </view>
+      </view>
+      <view class="singleBox">
+          <image src="../../images/server-02.jpg"></image> 
+          <text class="title">最近特别喜欢FINNEAS的歌曲，分享给大家</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon2 }}" />
+          </view>
+      </view>
+        <view class="singleBox">
+          <image src="../../images/server-03.jpg"></image> 
+          <text class="title">缓缓流动的音符让人心旷神怡，我偏爱这样的轻音乐</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon1 }}" />
+          </view>
+      </view>
+      <view class="singleBox">
+          <image src="../../images/server-04.jpg"></image> 
+          <text class="title">我最喜欢的音乐综艺终于回来了！安利给大家！</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon2 }}" />
+          </view>
+      </view>
+      <view class="singleBox">
+          <image src="../../images/server-01.jpg"></image> 
+          <text class="title">非常可爱的布偶制作流程</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon1 }}" />
+          </view>
+      </view>
+      <view class="singleBox">
+          <image src="../../images/server-02.jpg"></image> 
+          <text class="title">非常可爱的布偶制作流程</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon2 }}" />
+          </view>
+      </view>
+      <view class="singleBox">
+          <image src="../../images/server-03.jpg"></image> 
+          <text class="title">非常可爱的布偶制作流程</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon2 }}" />
+          </view>
+      </view>
+      <view class="singleBox">
+          <image src="../../images/server-04.jpg"></image> 
+          <text class="title">非常可爱的布偶制作流程</text>
+          <text class="subtitle">333人观看</text>
+          <view>
+            <van-icon color="red" name="{{ icon1 }}" />
+          </view>
+      </view>
+    </view>
+</view>
+
+

@@ -1,0 +1,56 @@
+<view class="avator">
+  <view class="topBox">
+    <view class="topLeft">
+      <van-icon size="50rpx" color="#2A8CE5" name="photograph" />
+    </view>
+    <view class="topRight">
+      <van-icon size="50rpx" color="#2A8CE5" name="invition" />
+    </view>
+  </view>
+  <image src="../../images/avator.png"></image>
+  <text>{{userNme}}</text>
+</view>
+
+
+<view class="main" bind:tap="main">
+    <text>个人主页</text>
+    <text class="date">分享精彩都在这！！！</text>
+</view>
+<view class="content">
+    <view class="cell">
+        <text>绑定手机号</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>购物车</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>我的订单</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>收货地址</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>优惠券</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>我的收藏</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>设置</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>意见反馈</text>
+       <image src="{{ icon }}"></image>
+    </view>
+    <view class="cell">
+        <text>关于我们</text>
+       <image src="{{ icon }}"></image>
+    </view>
+</view>

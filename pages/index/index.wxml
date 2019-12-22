@@ -1,0 +1,106 @@
+<view class="topImage">
+    <swiper class="activity" previous-margin="{{previousMargin}}" next-margin="{{nextMargin}}" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="155"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+
+<view class="choice">
+  <van-row>
+    <van-col
+        wx:for="{{ className }}"
+        wx:key="index"
+        span="4"
+    >
+      <view class="icon">
+        <van-icon
+          name="{{ icons }}"
+          size="40px"
+          color="#99CCFF"
+        />
+      </view>
+      <view class="iconText">{{ item }}</view>
+    </van-col>
+  </van-row>
+</view>
+
+
+<view class="hotCourse">
+    <viw class="topTitle">
+        <view class="left">
+            <image src="../../images/hot.png"></image>
+            <text>热门课程</text>
+        </view>
+        <text>更多></text>
+    </viw>
+    <view class="hotImg">
+        <scroll-view scroll-x style="width:100%">
+            <block wx:for="{{hotLesson}}">
+                <view style="background-color:{{item.color}}" class="item">
+                    <text class="title">{{item.title}}</text>
+                    <text class="subtitle">{{item.subtitle}}</text>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+</view>
+
+
+<view class="introVideo">
+    <viw class="topTitle">
+      <view class="tuijian"> 
+        <image src="../../images/intro.png"></image>
+        <text>陪练推荐</text>
+      </view>
+      <view class="tuijian">
+        <image src="../../images/intro.png"></image>
+        <text>琴房推荐</text>
+      </view>
+    </viw>
+
+    <view class="hotImg">
+      <view class="singleBox">
+        <image src="{{ introImg[0] }}"></image> 
+        <text class="title">钢琴陪练-黄老师</text>
+        <text class="subtitle">已指导333名学员</text>
+      </view>
+      <view class="singleBox">
+        <image src="{{ introImg[1] }}"></image> 
+        <text class="title">快乐音乐琴行</text>
+        <text class="subtitle">提供钢琴</text>
+      </view>
+      <view class="singleBox">
+        <image src="{{ introImg[2] }}"></image> 
+        <text class="title">吉他陪练-陈老师</text>
+        <text class="subtitle">已指导333名学员</text>
+      </view>
+      <view class="singleBox">
+        <image src="{{ introImg[3] }}"></image> 
+        <text class="title">朵拉琴行</text>
+        <text class="subtitle">不提供设备</text>
+      </view>
+      <view class="singleBox">
+        <image src="{{ introImg[4] }}"></image> 
+        <text class="title">小提琴陪练-李老师</text>
+        <text class="subtitle">已指导333名学员</text>
+      </view>
+      <view class="singleBox">
+        <image src="{{ introImg[5] }}"></image> 
+        <text class="title">世纪阳光琴行</text>
+        <text class="subtitle">提供架子鼓</text>
+      </view>
+    </view>
+</view>
+
+
+
+<view bindtap='adddetial'>
+  <view class="add_shop">
+    <van-icon color="#FFCC33" size="60rpx" name="cart" />
+  </view>
+</view>

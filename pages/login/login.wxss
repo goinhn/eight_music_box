@@ -1,0 +1,40 @@
+page{
+    background-color: #F5F7FB;
+}
+
+.top{
+    height: 180rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.top .title{
+    display: block;
+    font-size:34rpx;
+    text-align:center;
+    color:#333;
+    margin-top:45rpx;
+}
+.top .subtitle{
+    display: block;
+    font-size:26rpx;
+    color:#959595;
+    text-align:center;
+    margin-top:23rpx;
+}
+
+.input{
+    box-sizing: border-box;
+    height:740rpx;
+    background-color: #fff;
+    padding:60rpx 70rpx 70rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.button{
+  box-sizing: border-box;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  margin-top: 45rpx;
+}

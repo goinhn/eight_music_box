@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/mulu/mulu",
+    "pages/cellphone/cellphone",
+    "pages/server/server",
+    "pages/found/found",
+    "pages/mine/mine",
+    "pages/buy/buy"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "Goinhn",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+  },
+
+  
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "选课",
+        "iconPath": "images/icon-首页.png",
+        "selectedIconPath": "images/icon.png"
+      },
+      {
+        "pagePath": "pages/server/server",
+        "text": "服务",
+        "iconPath": "/images/icon-课程.png",
+        "selectedIconPath": "images/icon-课程-选中.png"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "text": "发现",
+        "iconPath": "/images/icon-学习.png",
+        "selectedIconPath": "images/icon-学习-选中.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/icon-我的.png",
+        "selectedIconPath": "images/icon-我的-选中.png"
+      }
+    ]
+  },
+
+
+  "sitemapLocation": "sitemap.json",
+
+  "usingComponents": {
+    "van-button": "/vant-weapp/dist/button/index",
+    "van-field": "/vant-weapp/dist/field/index",
+    "van-cell": "/vant-weapp/dist/cell/index",
+    "van-cell-group": "/vant-weapp/dist/cell-group/index",
+    "van-radio": "/vant-weapp/dist/radio/index",
+    "van-radio-group": "/vant-weapp/dist/radio-group/index",
+    "van-picker": "/vant-weapp/dist/picker/index",
+    "van-popup": "/vant-weapp/dist/popup/index",
+    "van-area": "/vant-weapp/dist/area/index",
+    "van-icon": "/vant-weapp/dist/icon/index",
+    "van-row": "/vant-weapp/dist/row/index",
+    "van-col": "/vant-weapp/dist/col/index",
+    "van-search": "/vant-weapp/dist/search/index",
+    "van-divider": "/vant-weapp/dist/divider/index",
+    "van-panel": "/vant-weapp/dist/panel/index",
+    "van-tab": "/vant-weapp/dist/tab/index",
+    "van-tabs": "/vant-weapp/dist/tabs/index"
+  }
+}

@@ -1,0 +1,126 @@
+page{
+    background-color: #fff;
+}
+
+
+.search{
+  width:95%;
+  display:flex;
+  margin-top:0rpx;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+.videoBox{
+  overflow:hidden;
+  margin-top:10rpx;
+  box-sizing:border-box;
+  
+}
+
+.videoBox .videoImage{
+  display:block;
+  width:400rpx;
+  height:225rpx;
+  margin:0rpx auto 0rpx auto;
+}
+.videoBox .title{
+  display: block;
+  font-size:34rpx;
+  text-align:center;
+  color:#333;
+  margin-top:10rpx;
+}
+.videoBox .subtitle{
+  display: block;
+  font-size:26rpx;
+  color:#959595;
+  text-align:center;
+  margin-top:10rpx;
+}
+
+
+.divider{
+  width:90%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.avator{
+  background-color: #fff;
+  height: 90rpx;
+  box-sizing: border-box;
+  padding-top:15rpx;
+  padding-bottom: 0rpx;
+  padding-left:80rpx;
+  display:flex;  
+  justify-content:left;
+}
+.avator>image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  display:flex;
+}
+.avator>text{
+  margin-top:25rpx;
+  margin-left:60rpx;
+  font-size:35rpx;
+  color:#333333;
+  display:flex;   
+  font-weight:800;
+  font-family:YouYuan; 
+}
+
+
+.panel{
+  height:400rpx;
+  box-sizing: border-box;
+  padding-top:60rpx;
+  padding-left:45rpx;
+  padding-right:45rpx;
+}
+
+.panel .title{
+  display:flex;
+  width:100%;
+  height:100rpx;
+  text-align: center;
+  justify-content: center;
+  flex-direction:column;
+  align-content: center;
+}
+
+
+.choice{
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.iconText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size:25rpx;
+  justify-content: center;
+}
+.vanRow{
+  display: block;
+  margin:0 rpx, auto, 20rpx, auto;
+}
+#icon{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+}
+
+
+.pop{
+  box-sizing: border-box;
+  padding:0rpx 45rpx 20rpx 45rpx;
+}
+

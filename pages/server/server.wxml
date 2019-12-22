@@ -1,0 +1,99 @@
+<view class="search">
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    use-action-slot
+    bind:search="onSearch"
+    shape="round"
+  >
+    <view slot="action" bind:tap="onSearch">搜索</view>
+  </van-search>
+</view>
+
+
+<view class="choice">
+  <van-row>
+    <van-col
+        wx:for="{{ className1 }}"
+        wx:key="index"
+        span="12"
+      >
+      <van-icon
+        name="{{ icon1 }}"
+        size="30px"
+        color="#66CCCC"
+        id="icon"
+      />
+      <view class="iconText">{{ item }}</view>
+    </van-col>
+  </van-row>
+</view>
+
+
+<view class="videoBox">
+  <image class="videoImage" src="../../images/banner-01.png"></image>
+  <text class="title">了解课堂</text>
+  <text class="subtitle">名师一对一，随时陪你练</text>
+</view>
+
+
+<view class="divider">
+  <van-divider hairline customStyle="color: #1EDED;border-color: #1EDED;"></van-divider>
+</view>
+
+
+<view class="avator">
+  <block> 
+    <image  src="../../images/avator.png"></image>
+  </block>
+  <text>{{userName}}</text>
+</view>
+
+
+<view class="panel">
+  <van-panel title="11月12日">
+    <view class="title">今日暂无课程安排</view>
+  </van-panel>
+
+  <view>
+    <van-cell title="全部课程表" is-link bind:click="showPopup1" />
+      <van-popup
+        show="{{ show1 }}"
+        round
+        position="bottom"
+        custom-style="height: 60%"
+        bind:close="onClose1"
+      />
+  </view>
+</view>
+
+
+<view class="choice">
+  <van-row>
+    <van-col
+        wx:for="{{ className2 }}"
+        wx:key="index"
+        span="6"
+      >
+      <van-icon
+        name="{{ icon2 }}"
+        size="40px"
+        color="pink"
+        id="icon"
+      />
+      <view class="iconText">{{ item }}</view>
+    </van-col>
+  </van-row>
+</view>
+
+
+<view class="pop">
+    <van-cell title="我的班级" is-link bind:click="showPopup2" />
+      <van-popup
+        show="{{ show2 }}"
+        round
+        position="bottom"
+        custom-style="height: 60%"
+        bind:close="onClose2"
+      />
+</view>

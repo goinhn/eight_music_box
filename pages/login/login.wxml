@@ -1,0 +1,98 @@
+<view>
+  <view class="top">
+      <text class="title">注册您的个人账号</text>
+      <text class="subtitle">为您提供量身定制的服务</text>
+  </view>
+
+  <view class="input">
+    <view>
+      <van-cell-group>
+        <van-field
+          value="{{ username }}"
+          required
+          clearable
+          label="用户名"
+          icon="question-o"
+          placeholder="请输入用户名"
+          bind:click-icon="onClickIcon"
+          user-button-slot
+        />
+        <van-field
+          value="{{ password }}"
+          type="password"
+          label="密码"
+          placeholder="请输入密码"
+          required
+          use-button-slot
+        />
+        <van-field
+          value="{{ age }}"
+          type="number"
+          label="年龄"
+          placeholder="请输入年龄"
+          required
+          use-button-slot
+        />
+      </van-cell-group>
+    </view>
+    
+    <view>
+      <van-radio-group value="{{ radio }}" bind:change="onSex">
+        <van-cell-group>
+          <van-cell
+            label-positon="left"
+            title="男（man）"
+            clickable
+            data-name="1"
+            bind:click="onSexSub"
+          >
+            <van-radio slot="right-icon" name="1" />
+          </van-cell>
+          <van-cell
+            label-position="left"
+            title="女（woman）"
+            clickable
+            data-name="2"
+            bind:click="onSexSub"
+          >
+            <van-radio slot="right-icon" name="2" />
+          </van-cell>
+        </van-cell-group>
+      </van-radio-group>
+    </view>
+    
+    <view>
+      <van-cell 
+        title="选择地点" 
+        is-link bind:click="showPopup" 
+      />
+      <van-popup 
+        show="{{ show }}" 
+        duration="500"
+        round
+        closeable
+        safe-area-inset-top
+        bind:close="onClose">
+          <van-picker 
+            show-toolbar 
+            visible-item-count="8"
+            toolbar-position="bottom"
+            columns="{{ columns }}" 
+            bind:change="onLocation"
+            item-height="30"
+          />
+      </van-popup>
+    </view>
+  </view>
+  
+  <view class="button">
+    <van-button slot="button" type="info" size="normal" plain block round bind:click="onClickButtonSubmit">提交</van-button>
+  </view>
+ 
+
+</view>
+
+
+
+
+
